@@ -1,6 +1,7 @@
 {
-  "name": "emotion-normalize",
+  "name": "@gradeproof/emotion-normalize",
   "version": "10.1.0",
+  "private": true,
   "description": "Normalize file for emotion JSS library",
   "main": "dist/index.js",
   "typings": "index.d.ts",
@@ -27,19 +28,19 @@
     "prebuild": "./bin/build.js",
     "build": "babel src --out-dir dist",
     "update": "ncu -u normalize.css",
-    "prepublish": "npm run update && npm run prebuild",
+    "prepublishOnly": "npm run update && npm run prebuild",
     "postversion": "git push origin master --tags && npm publish"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.0",
-    "@babel/preset-env": "^7.5.0",
-    "@emotion/core": ">=10.0.0",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/preset-env": "^7.10.4",
+    "@emotion/react": "^11.0.0-next.13",
     "normalize.css": "^8.0.1",
-    "npm-check-updates": "^3.1.16"
+    "npm-check-updates": "^7.0.1"
   },
   "peerDependencies": {
-    "@emotion/core": ">=10.0.0",
-    "react": ">=16.3.0"
+    "@emotion/react": "11.x",
+    "react": "16.x"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "@gradeproof/emotion-normalize",
-  "version": "10.1.0",
+  "version": "11.0.0",
   "private": true,
   "description": "Normalize file for emotion JSS library",
   "main": "dist/index.js",
